@@ -1,0 +1,73 @@
+{% load static %}
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/CSS/main.css' %}">
+    <link rel="icon" href="{% static 'main/img/favicon.ico' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a class="logo__a" href="{% url 'home' %}">
+                    <img src="{% static 'main/img/logo.svg' %}" alt="Logo" class="header__logo">
+                </a>
+
+                <div class="header__company">
+                    ADC TEAM
+                </div>
+                <div class="menu__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">             
+                        <li class="menu__item {% if request.path == '/' %}active{% endif %}"><a href="{% url 'home'%}" class="menu__link">Головна</a></li>
+                        <li class="menu__item {% if request.path == '/products' %}active{% endif %}"><a href="{% url 'products'%}" class="menu__link">Продукція</a></li>
+                        <li class="menu__item {% if request.path == '/projects' %}active{% endif %}"><a href="{% url 'projects'%}" class="menu__link">Проєкти</a></li>
+                        <li class="menu__item {% if request.path == '/about' %}active{% endif %}"><a href="{% url 'about'%}" class="menu__link">Про нас</a></li>
+                        <li class="menu__item {% if request.path == '/contact' %}active{% endif %}"><a href="{% url 'contact'%}" class="menu__link">Контакти</a></li>
+                    </ul>
+                    <div class="menu__tel">
+                        <a href="tel:+38(067)249-77-58" class="tel">
+                            <img src="{% static 'main/img/phone.svg' %}" alt="icon phone">
+                            <span>+38(067)249-77-58</span>
+                        </a>
+                    </div>
+                    <div class="menu__lang">
+                        <ul id="menu__list">
+                            <li class="lang-en"><a href="https://www.adcgr.com/en/" title="En (en)" class="menu__link"><span>En</span></a></li>
+                            <li class="lang-uk active"><a href="https://www.adcgr.com/uk/" title="Uk (uk)" class="menu__link"><span>Uk</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            {% block content %}
+
+            {% endblock%}
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="menu__item"><a href="{% url 'products'%}" class="menu__link">Продукція</a></li>
+                        <li class="menu__item"><a href="{% url 'projects'%}" class="menu__link">Проєкти</a></li>
+                        <li class="menu__item"><a href="{% url 'about'%}" class="menu__link">Про нас</a></li>
+                        <li class="menu__item"><a href="{% url 'contact'%}" class="menu__link">Контакти</a></li>
+                    </ul>
+                    <div class="footer__copirate">
+                        Copyright © ADC team corp.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>

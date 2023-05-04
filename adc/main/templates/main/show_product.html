@@ -1,0 +1,24 @@
+{%  extends 'main/layout.html'%}
+{% load static %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+
+{% if post.photo %}
+<div class="prod__container">
+    <div class="prod__title title"><h1>{{ post.title}}</h1></div>
+    <div class="prod__body">
+        <div class="prod__image">
+            <img src="/media/{{ post.photo }}" alt="">
+        </div>
+        <div class="prod__text">
+            {{ post.content|safe }}
+        </div>
+        
+    </div>
+
+</div>
+
+
+{% endif %}
+
+{% endblock %}

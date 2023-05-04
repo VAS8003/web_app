@@ -1,0 +1,32 @@
+{%  extends 'main/layout.html'%}
+
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="main__title title"><h1>{{ title }}</h1></div>
+{% for c in cases %}
+
+    <div class="products__container">
+        <div class="product__body">
+            <div class="product__row1">
+                <div class="product__title title">
+                    <h2>{{ c.title }}</h2>
+                </div>
+                <div class="product__image">
+                    <img src="/media/{{ c.photo }}" alt="">
+                </div>
+            </div>
+            <div class="product__row2">
+                <div class="product__preview">
+                    <p>{{ c.preview }}</p>
+                </div>
+                <div class="product__link">
+                    <a href="projects/{{ c.slug }}">Докладніше</a>
+                </div>
+            </div>
+
+        </div>
+    <div>
+{% endfor %}
+{% endblock %}

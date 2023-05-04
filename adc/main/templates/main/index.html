@@ -1,0 +1,165 @@
+{%  extends 'main/layout.html'%}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+        <div class="decor__backgraund">
+            <div class="decor__container">
+                <div class="decor__message massage">
+                    <div class="message__content">
+                        <h1>Виробництво  трансформаторів, фільтрів, котушок, індукторів під замовлення </h1>
+                        <br>
+                        <p>Ми - компанія, яка займається виробництвом трансформаторів, фільтрів, котушок та індукторів на замовлення. Ми пропонуємо індивідуальний підхід до кожного клієнта, дозволяючи забезпечити точність та високу якість виготовлення продукції. Наша команда з професіоналів завжди готова допомогти вам з усіма питаннями, пов'язаними з виробництвом необхідної продукції. Зверніться до нас, і ми з радістю вирішимо ваші завдання.</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <main class="main">
+            <section>
+                <div class="problem___container">
+                    <div class="problem__row">
+
+                        <div class="problem__content">
+                            <h2 class="title">Ми знаємо, які складнощі трапляються при пошуку виробника:</h2>
+                            <ul class="problem__list">
+                                <li>Шукаєте виріб “під ключ”, адже маєте чітке ТЗ від конструкторів/дизайнерів</li>
+                                <li>Вам потрібна консультація, аби не заплутатись у виборі (топологія, конструкція, схемотехніка тощо)</li>
+                                <li>Маєте зробити велику партію “на вчора”</li>
+                                <li>Чи навпаки, невелику партію не за всі гроші світу</li>
+                                <li>Вам важлива гнучкість в розрахунках — наприклад, щоб платити по факту відвантаження, і не заморожувати оборотні кошти</li>
+                                <li>Ви знайшли виріб в Китаї, але все ускладнюється логістикою, чужим менталітетом, оплатою не в національній валюті тощо</li>
+                            </ul>
+                            <span>Хороша новина: ваші пошуки ідеального підрядника завершуються тут. Ми розробляємо продукт без жодних недоліків, згаданих вище.</span>
+                        </div>
+                        <div class="problem__image">
+                            <img src="{% static 'main/img/img12x.webp' %}" alt="image manufacture" class="problem_img1">
+                        </div>
+                        <div class="problem__in">
+                            <div class="problem__inimage">
+                                <img src="{% static 'main/img/imgp1012.webp' %}" alt="image manufacture" class="problem_img">
+                            </div>
+                            <div class="problem__inimage">
+                                <img src="{% static 'main/img/imgp1061.webp' %}" alt="image manufacture" class="problem_img">
+                            </div>
+                            <div class="problem__inimage">
+                                <img src="{% static 'main/img/imgp3170.webp' %}" alt="image manufacture" class="problem_img">
+                            </div>
+                            <div class="problem__inimage">
+                                <img src="{% static 'main/img/imgp3193.webp' %}" alt="image manufacture" class="problem_img">
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="offer__container">
+
+                    <div class="offer__tittle ">
+                        <h2 class="title">Ми готові виробити для Вас наступні види продукції: </h2>
+                    </div>
+                    <div class="offer__body">
+                        <div class="offer__row">
+                           {% for p in  prod %}
+                            <a href="{{ p.slug }}">
+                                <div class="offer__item">
+                                    <div class="offer__image">
+                                        <img src="/media/{{ p.photo }}" alt="image product">
+                                    </div>
+                                <div class="offer__text"> <h3>{{ p.title}}</h3></div>
+    
+                                </div>
+                            </a>
+                            
+                            {% endfor %}
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <div class="why__container">
+                    <div class="why__title"><h2 class="title">Чому саме ми?<h2></div>
+                    <div class="why__row">
+                        <div class="why__item">
+                            <div class="why__top">
+                                <img src="{% static 'main/img/icon-park-solid_brain.svg' %}" alt="icon why" class="why__image">
+                            </div>
+
+                            <div class="why__subtitle">Досвід</div>
+                            <div class="why__text">15 років роботи на ринку дозволяють нам розробляти живлення суто під ваш пристрій, навіть якщо для цього треба прийняти абсолютно нове рішення</div>
+                        </div>
+                        <div class="why__item">
+                            <div class="why__top">
+                                <img src="{% static 'main/img/fluent_top-speed-20-regular.svg' %}" alt="icon why" class="why__image">
+                            </div>
+
+                            <div class="why__subtitle">Швидкість</div>
+                            <div class="why__text">За потреби ми працюємо 24/7, щоб встигнути в терміни, які іншим здаються нереальними. Також ми поступово збільшуємо виробничі потужності</div>
+                        </div>
+                        <div class="why__item">
+                            <div class="why__top">
+                                <img src="{% static 'main/img/icon-park_respect.svg' %}" alt="icon why" class="why__image">
+                            </div>
+
+                            <div class="why__subtitle">Репутація</div>
+                            <div class="why__text">Лише 2 рази за всю історію компанії ми переробляли наше замовлення, обидва рази в перші 2 роки роботи. З тих пір — жодного повернення.</div>
+                        </div>
+                        <div class="why__item">
+                            <div class="why__top">
+                                <img src="{% static 'main/img/ei_like.svg' %}" alt="icon why" class="why__image">
+                            </div>
+
+                            <div class="why__subtitle">Гнучкість</div>
+                            <div class="why__text">Ми працюємо з будь-яким масштабом замовлень, в тому числі і з маленькими партіями. Також, ми відкриті до різних форматів оплати</div>
+                        </div>
+                        <div class="why__item">
+                            <div class="why__top">
+                                <img src="{% static 'main/img/icon-park-solid_b1rain.svg' %}" alt="icon why" class="why__image">
+                            </div>
+
+                            <div class="why__subtitle">Українське виробництво</div>
+                            <div class="why__text">Mіж собою домовитись легше, ніж з китайськими колегами, зникає ризик непорозуміння. І найважливіше - український виробник дозволяє підтримувати українську економіку!</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="case__container">
+                    <div class="case__title"><h2 class="title">Наші кейси</h2></div>
+                    <div class="case__row">
+                        
+                    {% for c in case %}
+                        <div class="case__item">   
+                            <div class="item__image">
+                                <img src="/media/{{ c.photo }}" alt="image case">
+                            </div>
+                            <div class="item__text">{{ c.preview }}
+                                <div class="item__more"><a href="projects/{{ c.slug }}">Читати далі</a>  </div>
+                            </div>
+                        </div>    
+                    {% endfor %}
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <div class="webetter__container">
+                    <div class="webetter__title"><h2 class="title">Чому обирають нас?</h2></div>
+                    <div class="webetter__image">
+                        <img src="{% static 'main/img/uk_pc@2x.webp' %}" alt="image promo">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+{% endblock %}
