@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-02 18:04+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\main\templates\main\about.html:7
+msgid "Історія компанії"
+msgstr "ADC team history"
+
+#: .\main\templates\main\about.html:9
+msgid ""
+"Наша історія розпочалась у далекому 2007 році з маленької компанії на трьох "
+"осіб. Спочатку ми займались здебільшого дистрибуцією радіоелектроніки, а "
+"контрактне виробництво було другорядним напрямом. Згодом контрактне "
+"виробництво трансформувалося у виготовлення компонентів для систем та блоків "
+"живлення. Процес пішов — пропорційно до набутого досвіду зростала кількість "
+"клієнтів із “сарафанного радіо”, збільшувався парк техніки та об’єми "
+"виробництва. Окрім трансформаторів, з'являлися замовлення на кастомізовані "
+"блоки живлення або системи фільтрації від електромагнітних завад (ЕМІ). "
+"Згодом виробництво стало основною спеціалізацією нашої компанії."
+msgstr ""
+"Our story began back in 1998, when we, the founders of the company, began to gain experience in the field of modern elemental electronics and circuit solutions. Over the years, we've come to the conclusion that coil products and components for power supply systems are sphere where we can be most useful. So in 2007, a small company of three people was born."
+"At first, we were mostly engaged in the distribution of radio electronics, and contract manufacturing was a secondary direction. Later contract manufacturing was transformed into the manufacture of components for systems and power supplies. That’s when the action has begun - proportionally to gained experience we were getting more clients through word of mouth, the machinery park and the manufacturing scales were growing. In addition to transformers, there were orders for customized power supplies, electromagnetic interference (EMI) filtering systems, or other technical tasks that required unique solutions. Soon manufacturing became our main specialization."
+#: .\main\templates\main\about.html:12
+msgid ""
+"З того часу ми перетнули відмітку у 200 + клієнтів. Наші системи живлення "
+"працюють у провідних охоронних системах, у приладах очистки та дезінфекції "
+"басейнів, у портативних і стаціонарних кардіографах та моніторах пацієнтів "
+"для “швидких”, у дефібриляторах, у блоках живлення для світлодіодного "
+"освітлення, у громадському електротранспорті, у зарядних пристроях різної "
+"потужності та інших продуктах."
+msgstr ""
+"Since then, we have crossed the mark of 200+ customers. Our power systems work in leading security systems, in swimming pool cleaning and disinfection devices, in portable and stationary cardiographs and patient monitors for 'emergency', in defibrillators, in power units for LED lighting, in public electric transport, in charging devices of various capacities and others products"
+#: .\main\templates\main\about.html:18
+msgid ""
+"ADC team — компанія, що вже 15 років виробляє системи живлення під ключ. Ми "
+"прораховуємо намотку, виробляємо, лакуємо виріб та проводимо випробування, і "
+"все це у відповідності до міжнародних стандартів"
+msgstr ""
+"Our story has started in the early 2007 from a small company of 3 people. At the beginning we mainly distributed radio electronics, contact manufacturing was our secondary focus."
+#: .\main\templates\main\about.html:21
+msgid ""
+"Працюємо за принципом “дав обіцянку - виконуй”: робимо на совість, "
+"притримуємося дедлайнів, ділимось досвідом. І, звісно, у разі потреби "
+"гарантовано надаємо технічну підтримку — на весь термін роботи системи "
+"живлення"
+msgstr ""
+"Our main work principle is to keep promises: we do our job, meet all deadlines, share our experience and give recommendations. Also, obviously, we give technical support if needed — during the whole power supplies’ term of work."
+#: .\main\templates\main\about.html:22
+msgid "Наші потужності"
+msgstr "Our production capacities"
+
+#: .\main\templates\main\about.html:24
+msgid "обладнання для виготовлення виробів з лінійною та тороїдальною намоткою"
+msgstr "equipment for producing items with linear and toroidal winding"
+
+#: .\main\templates\main\about.html:25
+msgid "дві автоматичні складальні лінії"
+msgstr "2 automatic assembly lines"
+
+#: .\main\templates\main\about.html:26
+msgid "обладнання для вакуумного просочення"
+msgstr "vacuum impregnation equipment"
+
+#: .\main\templates\main\about.html:27
+msgid "відділ дрібносерійного виробництва"
+msgstr "department of small-scale production"
+
+#: .\main\templates\main\about.html:28
+msgid "лакувальний відділ"
+msgstr "varnish department"
+
+#: .\main\templates\main\about.html:29
+msgid "відділ технічного контролю та випробувань"
+msgstr "technical control and testing department"
+
+#: .\main\templates\main\about.html:47
+msgid "Зв’яжіться з нами"
+msgstr "Send"
+
+#: .\main\templates\main\about.html:52 .\main\templates\main\contact.html:34
+msgid "Залишити заявку"
+msgstr "Send"
+
+#: .\main\templates\main\contact.html:13
+msgid "м. Київ, 03134 "
+msgstr "Kyiv, 03134"
+
+#: .\main\templates\main\contact.html:13
+msgid "вул. Сім’ї Сосніних, 3"
+msgstr "Str. The Sosnin families, 3"
+
+#: .\main\templates\main\index.html:11
+msgid ""
+"Виробництво трансформаторів, фільтрів, котушок, індукторів під замовлення"
+msgstr ""
+"Production of transformers, filters, coils, inductors to order"
+#: .\main\templates\main\index.html:13
+msgid ""
+"Ми - компанія, яка займається виробництвом трансформаторів, фільтрів, "
+"котушок та індукторів на замовлення. Ми пропонуємо індивідуальний підхід до "
+"кожного клієнта, дозволяючи забезпечити точність та високу якість "
+"виготовлення продукції. Наша команда з професіоналів завжди готова допомогти "
+"вам з усіма питаннями, пов'язаними з виробництвом необхідної продукції. "
+"Зверніться до нас, і ми з радістю вирішимо ваші завдання."
+msgstr ""
+"We are a company engaged in the production of transformers, filters, coils and inductors to order. We offer an individual approach to each client, allowing us to ensure the accuracy and high quality of production. Our team of professionals is always ready to help you with all questions related to the production of the necessary products. Contact us and we will gladly solve your problems"
+#: .\main\templates\main\index.html:29
+msgid "Ми знаємо, які складнощі трапляються при пошуку виробника:"
+msgstr "We know the difficulties occurring in search of the right manufacturer:"
+
+#: .\main\templates\main\index.html:31
+msgid ""
+"Шукаєте виріб “під ключ”, адже маєте чітке ТЗ від конструкторів/дизайнерів"
+msgstr ""
+"Looking for a turnkey product, because you have strict technical requirement from constructors/designers"
+#: .\main\templates\main\index.html:33
+msgid ""
+"Вам потрібна консультація, аби не заплутатись у виборі (топологія, "
+"конструкція, схемотехніка тощо)"
+msgstr ""
+"Consultation is needed so that you won’t get confused with the choice (topology, construction, curcuit design etc.)"
+#: .\main\templates\main\index.html:34
+msgid "Маєте зробити велику партію “на вчора”"
+msgstr "A huge batch ASAP is needed"
+
+#: .\main\templates\main\index.html:35
+msgid "Чи навпаки, невелику партію не за всі гроші світу"
+msgstr "Wage flexibility is important to pay upon shipment and do not froze working capital, for example"
+
+#: .\main\templates\main\index.html:36
+msgid ""
+"Вам важлива гнучкість в розрахунках — наприклад, щоб платити по факту "
+"відвантаження, і не заморожувати оборотні кошти"
+msgstr ""
+"Small batch for little money is needed"
+#: .\main\templates\main\index.html:37
+msgid ""
+"Ви знайшли виріб в Китаї, але все ускладнюється логістикою, чужим "
+"менталітетом, оплатою не в національній валюті тощо"
+msgstr ""
+"The necessary product was found in China, but everything is complicated by logistics"
+#: .\main\templates\main\index.html:39
+msgid ""
+"Хороша новина: ваші пошуки ідеального підрядника завершуються тут. Ми "
+"розробляємо продукт без жодних недоліків, згаданих вище."
+msgstr ""
+"Good news: your search of a perfect contractor ends here. We manufacture a product without any disadvantages mentioned above."
+#: .\main\templates\main\index.html:67
+msgid "Ми готові виробити для Вас наступні види продукції:"
+msgstr "We are ready to make the following types of products for you:"
+
+#: .\main\templates\main\index.html:93
+msgid "Чому саме ми?"
+msgstr "Why us?"
+
+#: .\main\templates\main\index.html:101
+msgid "Досвід"
+msgstr "Experience"
+
+#: .\main\templates\main\index.html:102
+msgid ""
+"15 років роботи на ринку дозволяють нам розробляти живлення суто під ваш "
+"пристрій, навіть якщо для цього треба прийняти абсолютно нове рішення"
+msgstr ""
+"15 years on the market allows us to develop a source of supply, tailored exactly to your product, even if it requires a completely new and non-standart solution"
+#: .\main\templates\main\index.html:110
+msgid "Швидкість"
+msgstr "Speed"
+
+#: .\main\templates\main\index.html:111
+msgid ""
+"За потреби ми працюємо 24/7, щоб встигнути в терміни, які іншим здаються "
+"нереальними. Також ми поступово збільшуємо виробничі потужності"
+msgstr ""
+"We work 24/7 when required to meet the deadlines that seem impossible to others. Also, we are gradually increasing our manufacturing capacities"
+#: .\main\templates\main\index.html:118
+msgid "Репутація"
+msgstr "Reputation"
+
+#: .\main\templates\main\index.html:119
+msgid ""
+"Лише 2 рази за всю історію компанії ми переробляли наше замовлення, обидва "
+"рази в перші 2 роки роботи. З тих пір — жодного повернення."
+msgstr ""
+"We work with all possible spheres: medicine, cinema, security systems, video surveillance, gas leak monitoring applications, electric transport etc. 90% of our clients return for reorder"
+#: .\main\templates\main\index.html:126
+msgid "Гнучкість"
+msgstr "Flexibility"
+
+#: .\main\templates\main\index.html:127
+msgid ""
+"Ми працюємо з будь-яким масштабом замовлень, в тому числі і з маленькими "
+"партіями. Також, ми відкриті до різних форматів оплати"
+msgstr ""
+"We work with any scale orders, including small batches. Also, we are open to different ways of payment."
+#: .\main\templates\main\index.html:134
+msgid "Українське виробництво"
+msgstr "Ukrainian production"
+
+#: .\main\templates\main\index.html:135
+msgid ""
+"Mіж собою домовитись легше, ніж з китайськими колегами, зникає ризик "
+"непорозуміння. І найважливіше - український виробник дозволяє підтримувати "
+"українську економіку!"
+msgstr ""
+"It is easier to agree with each other than with Chinese colleagues, the risk of misunderstanding disappears. And the most important thing - the Ukrainian manufacturer allows to support the Ukrainian economy!"
+#: .\main\templates\main\index.html:142
+msgid "Наші кейси"
+msgstr "Our cases"
+
+#: .\main\templates\main\index.html:151 .\main\templates\main\products.html:25
+#: .\main\templates\main\projects.html:26
+msgid "Докладніше"
+msgstr "Read more"
+
+#: .\main\templates\main\index.html:162
+msgid "Чому обирають нас?"
+msgstr "Why our clients choose us?"
+
+#: .\main\templates\main\layout.html:32
+msgid "Головна"
+msgstr "Main"
+
+#: .\main\templates\main\layout.html:35 .\main\templates\main\layout.html:78
+msgid "Продукція"
+msgstr "Product"
+
+#: .\main\templates\main\layout.html:38 .\main\templates\main\layout.html:81
+msgid "Проєкти"
+msgstr "Projects"
+
+#: .\main\templates\main\layout.html:41 .\main\templates\main\layout.html:84
+msgid "Про нас"
+msgstr "About us"
+
+#: .\main\templates\main\layout.html:44 .\main\templates\main\layout.html:87
+msgid "Контакти"
+msgstr "Contacts"
+
+#: .\main\templates\main\products.html:7
+msgid "Наші вироби"
+msgstr "Our products"
+
+#: .\main\templates\main\projects.html:8
+msgid "Наші проєкти"
+msgstr "Our projects"

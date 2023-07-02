@@ -7,7 +7,13 @@ from django.core.mail import send_mail
 def index(requests):
     prod = Product.objects.all()[0:6]
     case = Cases.objects.all()[0:4]
-    return render(requests, 'main/index.html', {'prod': prod, 'case': case,  "title" : "Виробництво трансформаторів, Фільтрів EMI, Котушок під замовлення" })
+    context = {
+        'prod': prod,
+        'case': case,
+        "title": "Виробництво трансформаторів, Фільтрів EMI, Котушок під замовлення",
+        "title_en": "Production of transformers, EMI filters, Coils to order",
+    }
+    return render(requests, 'main/index.html', context)
 
 def about(requests):
     if requests.method == 'POST':
@@ -52,17 +58,19 @@ def contact(requests):
 def projects(requests):
     return render(requests, 'main/projects.html', {"title" : "Наші прєктм" })
 
-def products(requests):
-    return render(requests, 'main/products.html', {'products': Product.objects.all(), "title" : "Наша продукція" })
+def products(request):
+    products = Product.objects.all()
+    title = "Наша продукція"
+    return render(request, 'main/products.html', {'products': products, 'title': title})
 
 def projects(requests):
     case = Cases.objects.all()
     return render(requests, 'main/projects.html', {'cases': case, "title" : "Наші проєкти" })
 
-def show_product(requests, post_slug):
+def show_product(request, post_slug):
     post = get_object_or_404(Product, slug=post_slug)
 
-    context ={
+    context = {
         'post': post,
         'title': post.title,
         'preview': post.preview,
@@ -70,9 +78,9 @@ def show_product(requests, post_slug):
         'photo': post.photo,
         'id': post.id,
         'slug': post.slug
-
     }
-    return render(requests, 'main/show_product.html', context=context)
+    return render(request, 'main/show_product.html', context=context)
+
 
     # return HttpResponse(f"Тoвар номер : {post_id}")
 # #

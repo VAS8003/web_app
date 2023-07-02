@@ -1,5 +1,5 @@
 {%  extends 'main/layout.html'%}
-
+{% load  i18n %}
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
@@ -10,34 +10,34 @@
                     </div>
                 </div>
                 <div class="contact__address">
-                    <div class="address">м. Київ, 03134 <br>вул. Сім’ї Сосніних, 3</div>
+                    <div class="address">{% trans 'м. Київ, 03134 ' %}<br>{% trans 'вул. Сім’ї Сосніних, 3' %}</div>
                     <a href="tel:+38(044)206-22-52" class="contact__tel">
-                        <img src="https://www.adcgr.com/wp-content/themes/adc/img/ci_phone.svg" alt="">
+                        <img src="https://www.adcgr.com/wp-content/themes/adc/img/ci_phone.svg" alt="image">
                         <span class="contact__span">+38(044)206-22-52</span>
                     </a>
                     <a href="tel:+38(050)464-22-52" class="contact__tel">
-                        <img src="https://www.adcgr.com/wp-content/themes/adc/img/ci_phone.svg" alt="">
+                        <img src="https://www.adcgr.com/wp-content/themes/adc/img/ci_phone.svg" alt="image">
                         <span class="contact__span">+38(050)464-22-52</span>
                     </a>
                     <a href="tel:+38(044)361-46-78" class="contact__tel">
-                        <img src="https://www.adcgr.com/wp-content/themes/adc/img/ci_phone.svg" alt="">
+                        <img src="https://www.adcgr.com/wp-content/themes/adc/img/ci_phone.svg" alt="image">
                         <span class="contact__span">+38(044)361-46-78</span>
                     </a>
                     <a href="tel:+38(067)249-77-58" class="contact__tel">
-                        <img src="https://www.adcgr.com/wp-content/themes/adc/img/ci_phone.svg" alt="">
+                        <img src="https://www.adcgr.com/wp-content/themes/adc/img/ci_phone.svg" alt="image">
                         <span class="contact__span">+38(067)249-77-58</span>
                     </a>
                     <div class="contact__form contact">
                         <form method="post" class="form__form">
                             {% csrf_token %}
                             {{ form.as_p }}
-                            <button class="form__btn" type="submit">Залишити заявку</button>
+                            <button class="form__btn" type="submit">{% trans 'Залишити заявку' %}</button>
                           </form>
                     </div>
                     <div class="l">
-                        <a href=""><img src="https://www.adcgr.com/wp-content/themes/adc/img/in.svg" alt=""></a>
-                        <a href="mailto:"><img src="https://www.adcgr.com/wp-content/themes/adc/img/m.svg" alt=""></a>
-                        <a href=""><img src="https://www.adcgr.com/wp-content/themes/adc/img/f.svg" alt=""></a>
+                        <a href=""><img src="https://www.adcgr.com/wp-content/themes/adc/img/in.svg" alt="image"></a>
+                        <a href="mailto:"><img src="https://www.adcgr.com/wp-content/themes/adc/img/m.svg" alt="image"></a>
+                        <a href=""><img src="https://www.adcgr.com/wp-content/themes/adc/img/f.svg" alt="image"></a>
                     </div>
                     
                         

@@ -1,11 +1,14 @@
 from django.contrib import admin
+from modeltranslation.admin import TranslationAdmin
 
 from .models import  *
 
-class ProductAdmin(admin.ModelAdmin):
+@admin.register(Product)
+class ProductAdmin(TranslationAdmin):
     prepopulated_fields = {"slug": ("title",)}
-class CaseAdmin(admin.ModelAdmin):
+@admin.register(Cases)
+class CaseAdmin(TranslationAdmin):
     prepopulated_fields = {"slug": ("title",)}
 
-admin.site.register(Product, ProductAdmin)
-admin.site.register(Cases, CaseAdmin)
+# admin.site.register(Product, TranslationAdmin)
+# admin.site.register(Cases, CaseAdmin)
