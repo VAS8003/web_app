@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'modeltranslation',
-
+    'ckeditor',
     'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',

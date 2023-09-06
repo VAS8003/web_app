@@ -1,0 +1,33 @@
+{%  extends 'main/layout.html'%}
+{% load  i18n %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+<div class="main__title title"><h1>{% trans 'Новини' %}</h1></div>
+{% for n in news %}
+
+    <div class="products__container">
+        <div class="product__body">
+            <div class="product__row1">
+                <div class="product__title title">
+                    <h2>{{ n.title }}</h2>
+                </div>
+                <div class="product__image">
+                    <img src="/media/{{ n.photo }}" alt="image">
+                </div>
+            </div>
+            <div class="product__row2">
+                <div class="product__preview">
+                    <p>{{ n.preview }}</p>
+                </div>
+                <div class="product__link">
+                    <a href="{{ n.slug }}">{% trans 'Докладніше' %}</a>
+                </div>
+            </div>
+
+        </div>
+    <div>
+{% endfor %}
+{% endblock %}

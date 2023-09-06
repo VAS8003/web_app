@@ -9,17 +9,33 @@
     <div class="prod__title title"><h1>{{ post.title}}</h1></div>
     <div class="prod__body">
         <div class="prod__image">
-            <img src="/media/{{ post.photo }}" alt="image">
+            <img src="/media/{{ post.photo }}" alt="image" width="500" height="300">
         </div>
         <div class="prod__text">
             {{ post.content|safe }}
         </div>
-        
+
     </div>
 
 </div>
 
 
 {% endif %}
+<div class="contactproduct__container">
+    <div class="contactproduc__body">
+        <div class="contactproduc__contact">
+            <hi class="contact__title title">{% trans "Зв’яжіться з нами" %}</hi>
+            <div class="contact__form">
+                <form method="post" class="form__form">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="form__btn" type="submit">{% trans "Залишити заявку" %}</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
 
 {% endblock %}
